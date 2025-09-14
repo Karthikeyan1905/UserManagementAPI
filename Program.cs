@@ -1,4 +1,8 @@
 
+using System.Configuration;
+using UserManagement.Bussiness.Repository;
+using UserManagement.Bussiness.RepositoryInterface;
+
 namespace UserManagementAPI
 {
     public class Program
@@ -13,6 +17,10 @@ namespace UserManagementAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<IUserInfoRepository>(provider =>
+    new UserInfoRepository(builder.Configuration.GetConnectionString("connstr")));
+
 
             var app = builder.Build();
 
