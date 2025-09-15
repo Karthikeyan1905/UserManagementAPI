@@ -21,7 +21,6 @@ namespace UserManagementAPI
             builder.Services.AddScoped<IUserInfoRepository>(provider =>
     new UserInfoRepository(builder.Configuration.GetConnectionString("connstr")));
 
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

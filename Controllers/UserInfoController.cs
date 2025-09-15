@@ -10,13 +10,10 @@ namespace UserManagementAPI.Controllers
     public class UserInfoController : Controller
     {
         private readonly IUserInfoRepository _repository;
-
         public UserInfoController(IUserInfoRepository repository)
         {
             _repository = repository;
         }
-
-
 
         [HttpGet(Name = "GetSelect")]
         public IEnumerable<UserInfo> GetSelect([FromQuery] int userid, [FromQuery] string status )
