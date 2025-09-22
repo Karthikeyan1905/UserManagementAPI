@@ -5,6 +5,26 @@ Accept: application/json
 
 GET {{UserManagementAPI_HostAddress}}/UserInfo/
 Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/Address/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/Department/
+Accept: application/json
+
+GET {{UserManagementAPI_HostAddress}}/Education/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/Experience/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/LoginCredential/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/LoginHistory/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/Phone/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/Team/
+Accept: application/json
+GET {{UserManagementAPI_HostAddress}}/TeamUser/
+Accept: application/json
+
 
 
 
